@@ -1,0 +1,90 @@
+body {
+    font-family: 'Bender';
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    src: url(assets/Bender.otf) format('opentype');
+}
+h1 {
+    font-family: 'Bender';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    color: #4CAF50;
+    src: url(assets/Bender.otf) format('opentype');
+
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 27.8%;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#downloadLink {
+    margin-top: 20px;
+    display: block;
+}
+section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

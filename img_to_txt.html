@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Image Compression</title>
+    <link rel="stylesheet" href="style_txt.css">
+    <link rel="stylesheet" href="https://font.sec.miui.com/font/css?family=Source_Han_Serif:400,600:Source_Han_Serif" />
+</head>
+<body>
+    <h1>Optimized Image to Text with RLE</h1>
+
+    <section>
+        <!-- 输入图片 -->
+        <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg, image/webp" />
+
+        <button id="compressBtn">Compress Image to TXT</button>
+        <button id="decompressBtn">Decompress TXT to Image</button>
+
+        <!-- 用于显示图片 -->
+        <canvas id="imageCanvas" style="display: none;"></canvas>
+
+        <!-- 下载生成的TXT文件 -->
+        <a id="downloadLink" style="display: none;">Download Compressed TXT</a>
+
+        <!-- 选择压缩的TXT文件 -->
+        <input type="file" id="txtInput" style="display: none;" />
+
+        <!-- 显示解压后的图片 -->
+        <img id="outputImage" style="display: none;" />
+    </section>
+
+    <div class="floating-button" id="floatingButton">
+        <span>☰</span>
+        <div class="tooltip">
+            <a href="index.html">主页</a>
+            <a href="img_blur.html">图像模糊</a>
+            <a href="img_encrypt.html">图像加密</a>
+        </div>
+    </div>
+
+    <script src="imgtxt.min.js"></script>
+    <script src="floatingButton.min.js"></script>
+</body>
+</html>

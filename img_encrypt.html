@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos-based Image Encryption and Decryption</title>
+    <link rel="stylesheet" href="style_enc.css">
+    <link rel="stylesheet" href="https://font.sec.miui.com/font/css?family=Source_Han_Serif:400,600:Source_Han_Serif" />
+</head>
+<body>
+    <h1>Chaos-based Image Encryption and Decryption</h1>
+
+    <!-- 上传图片 -->
+    <section>
+        <h2>Upload Images for Encryption</h2>
+        <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg, image/webp" multiple />
+        <button id="encryptBtn">Encrypt Images to JPG</button>
+    </section>
+
+    <!-- 上传加密图片以解密 -->
+    <section>
+        <h2>Upload Encrypted Images for Decryption</h2>
+        <input type="file" id="encryptedImageInput" accept="image/png, image/jpeg, image/jpg, image/webp" multiple />
+        <button id="decryptBtn">Decrypt Images</button>
+    </section>
+
+    <!-- 用于显示加密后的图片 -->
+    <section id="encryptedImagesContainer"></section>
+
+    <!-- 显示下载链接 -->
+    <section id="downloadLinksContainer" style="display: none;"></section>
+    <div class="floating-button" id="floatingButton">
+        <span>☰</span>
+        <div class="tooltip">
+            <a href="index.html">主页</a>
+            <a href="img_blur.html">图像模糊</a>
+            <a href="img_to_txt.html">图像转txt</a>
+        </div>
+    </div>
+    <script src="imgencrypt.min.js"></script>
+    <script src="floatingButton.min.js"></script>
+</body>
+</html>
